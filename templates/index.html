@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Ration Slot</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; }
+        .container { max-width: 400px; margin: 100px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #2c3e50; }
+        form { display: flex; flex-direction: column; }
+        label { margin-top: 15px; font-weight: bold; color: #333; }
+        input { padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; }
+        button { margin-top: 20px; padding: 12px; background-color: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: bold; }
+        button:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏪 Ration Shop Slot Booking</h1>
+        <form method="POST" action="/book">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="ration_no">Ration Card Number:</label>
+            <input type="text" id="ration_no" name="ration_no" required>
+            
+            <button type="submit">Book Slot</button>
+        </form>
+        <br>
+        <p style="text-align: center;">
+            <a href="/admin" style="color: #3498db; text-decoration: none;">View Bookings</a>
+        </p>
+    </div>
+</body>
+</html>
